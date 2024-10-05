@@ -20,7 +20,7 @@ from constants_perso import *  # Personal customization
 #--------------------------------------------------
 #--------------------------------------------------
 
-# Arguments 
+# Arguments
 parser = argparse.ArgumentParser(description='Conversion a LaTex file to a text file keeping apart commands and maths.')
 parser.add_argument('inputfile', help='input LaTeX filename')
 parser.add_argument('outputfile', nargs='?', help='output text filename')
@@ -33,17 +33,17 @@ dictionary_file = options.dicfile
 
 
 # Get argument: a tex file
-file_name, file_extension = os.path.splitext(tex_file) 
+file_name, file_extension = os.path.splitext(tex_file)
 
 
-# Output file name 
+# Output file name
 if output_file:
     txt_file = output_file    # Name given by user
 else:
     txt_file = file_name+'.txt' # If no name add a .txt extension
 
 
-# Dictionary file name 
+# Dictionary file name
 if dictionary_file:
     dic_file = dictionary_file    # Name given by user
 else:
@@ -58,7 +58,7 @@ fic_tex.close()
 # Real stuff starts there!
 # Replacement function pass as the replacement pattern in re.sub()
 
-count = 0           # counter for tags
+count = 0          # counter for tags
 dictionary = {}    # memorize tag: key=nb -> value=replacement
 
 def func_repl(m):
@@ -71,7 +71,7 @@ def func_repl(m):
     global count
     dictionary[count] = m.group(0)  # Add old string found to the dic
     tag_str = tag+str(count)+tag     # tag = '€' is defined in 'constants.py'
-    count += 1   
+    count += 1
     return tag_str                   # New string for pattern replacement
 
 
@@ -86,6 +86,14 @@ text_new = re.sub(r'(?<!\\)%.*',func_repl,text_new)
 text_new = re.sub(r'\\\\\[.*\]',func_repl,text_new)
 # Done here to avoid a bug below when replacing r'\[ ... \]'
 
+
+### Replace \emph{text text} with <em>text text</em>
+def emph_repl(m):
+    # Extract the content between \emph{ and }
+    content = m.group(1)
+    # Return the content wrapped in <em>...</em>
+    return f'<em>{content}</em>'
+text_new = re.sub(r'\\emph\{(.+?)\}', emph_repl, text_new, flags=re.MULTILINE|re.DOTALL)
 
 ### PART 1 - Replacement of maths ###
 
@@ -113,12 +121,17 @@ for env in list_env_discard + list_env_discard_perso:
 text_new = re.sub(r'\\begin\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 text_new = re.sub(r'\\end\{(.+?)\}',func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
 
-
 ### PART 4 - Replacement of LaTeX commands with their argument ###
 
 for cmd in list_cmd_arg_discard + list_cmd_arg_discard_perso:
     # Without opt arg, ex. \cmd{arg}
+    str_env = r'\\' + cmd + r'\{(.+?)\}\{(.+?)\}'
+    text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
+    # Without opt arg, ex. \cmd{arg}
     str_env = r'\\' + cmd + r'\{(.+?)\}'
+    text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
+    # With opt arg, ex. \cmd[opt]{arg}{arg2}
+    str_env = r'\\' + cmd + r'\[(.*?)\]\{(.+?)\}\{(.+?)\}'
     text_new = re.sub(str_env,func_repl,text_new, flags=re.MULTILINE|re.DOTALL)
     # With opt arg, ex. \cmd[opt]{arg}
     str_env = r'\\' + cmd + r'\[(.*?)\]\{(.+?)\}'
@@ -141,6 +154,10 @@ regexp_tag = tag + r'\d+' + tag
 regexp = regexp_tag + r'(\s*' + regexp_tag + r')+'
 text_new = re.sub(regexp,func_repl,text_new)
 
+### Replace { with <b>
+### Replace } with </b>
+text_new = re.sub(r'\{', '<b>', text_new, flags=re.MULTILINE|re.DOTALL)
+text_new = re.sub(r'\}', '</b>', text_new, flags=re.MULTILINE|re.DOTALL)
 
 # Output: text file
 with open(txt_file, 'w', encoding='utf-8') as fic_txt:

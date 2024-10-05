@@ -17,7 +17,7 @@ from constants_perso import *  # Personal customization
 #--------------------------------------------------
 #--------------------------------------------------
 
-# Arguments 
+# Arguments
 parser = argparse.ArgumentParser(description='Conversion a text file to a LaTeX gluing back commands and maths.')
 parser.add_argument('inputfile', help='input text filename')
 parser.add_argument('dicfile', nargs='?', help='input dictionary filename')
@@ -30,17 +30,17 @@ dictionary_file = options.dicfile
 
 
 # Get argument: a txt file
-file_name, file_extension = os.path.splitext(txt_file) 
+file_name, file_extension = os.path.splitext(txt_file)
 
 
-# Dictionary file name 
+# Dictionary file name
 if dictionary_file:
     dic_file = dictionary_file    # Name given by user
 else:
     dic_file = file_name+'.dic' # If no name add a .dic extension
 
 
-# Output file name 
+# Output file name
 if output_file:
     tex_file = output_file    # Name given by user
 else:
@@ -61,6 +61,19 @@ fic_dic.close()
 # Replacements start now
 text_new = text_all
 
+### Replace <em>text text</em> with \emph{text text}
+def emph_repl(m):
+    # Extract the content between \emph{ and }
+    content = m.group(1)
+    # Return the content wrapped in <em>...</em>
+    return f'<em>{content}</em>'
+text_new = re.sub(r'\\emph\{(.+?)\}', emph_repl, text_new, flags=re.MULTILINE|re.DOTALL)
+
+### Replace <b> with {
+### Replace </b> with }
+text_new = re.sub(r'<b>', '{', text_new, flags=re.MULTILINE|re.DOTALL)
+text_new = re.sub(r'</b>', '}', text_new, flags=re.MULTILINE|re.DOTALL)
+
 # Iterate replacing until nothing remains to be replaced
 # (to deal with nested replacements)
 keep_replacing = True
@@ -80,5 +93,3 @@ while keep_replacing:
 # Write the result
 with open(tex_file, 'w', encoding='utf-8') as fic_tex:
     fic_tex.write(text_new)
-
-

@@ -57,5 +57,5 @@
 __pycache__
 .DS_Store
 
-node_modules
-google-translate-with-cache.json
+README.md
+Makefile

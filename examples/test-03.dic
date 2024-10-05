@@ -1,161 +1,193 @@
-0: $$(1+2)\times(3+4)\times(5+6)\times(7+8)\times\cdots$$
-1: $$\underbrace{123456789 \times 123456789 \times \cdots}_{7 \text{ occurrences de
-  } 123456789} \quad ?$$
-2: $$\frac{1}{7} = 0.\underbrace{142857}\underbrace{142857}\underbrace{142857}\ldots$$
-3: $$\frac{1}{???} = 0.00\underbrace{abcdefg}\underbrace{abcdefg}\ldots$$
-4: $$\text{ppcm}(a,b) = \frac{a \times b}{\text{pgcd}(a,b)}.$$
-5: $$\cos^2 \theta + \sin^2 \theta = 1.$$
-6: $$0,1,4,9,16,25,36,49,64,81.$$
-7: $$0+1+2+3+\cdots + 18 +19.$$
-8: "$$\n  \\begin{array}{l}\n  \\text{Initialisation : \\ci{somme}$=0$}    \\\\\n\
+0: '%===================================================================='
+1: '%===================================================================='
+2: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+3: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+4: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+5: '% Activité 1'
+6: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+7: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+8: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+9: '%Dans la suite tu continues d''écrire ton code dans l''éditeur mais on n''indiquera
+  plus qu''il faut utiliser \ci{print()} pour afficher les résultats.'
+10: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+11: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+12: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+13: '% Activité 2'
+14: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+15: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+16: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+17: '% Autre exemple : \ci{float()} transforme une chaîne de caractères en un nombre
+  : \ci{float("+1.234567")} renvoie le nombre flottant \ci{1.234567}.'
+18: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+19: '% Activité 3'
+20: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+21: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+22: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+23: '% pas d''index dans une mybox !!  '
+24: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+25: '% Activité 4'
+26: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+27: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+28: '% Activité 5'
+29: '%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%'
+30: $$(1+2)\times(3+4)\times(5+6)\times(7+8)\times\cdots$$
+31: $$\underbrace{123456789 \times 123456789 \times \cdots}_{7 \text{ occurrences
+  de } 123456789} \quad ?$$
+32: $$\frac{1}{7} = 0.\underbrace{142857}\underbrace{142857}\underbrace{142857}\ldots$$
+33: $$\frac{1}{???} = 0.00\underbrace{abcdefg}\underbrace{abcdefg}\ldots$$
+34: $$\text{ppcm}(a,b) = \frac{a \times b}{\text{pgcd}(a,b)}.$$
+35: $$\cos^2 \theta + \sin^2 \theta = 1.$$
+36: $$0,1,4,9,16,25,36,49,64,81.$$
+37: $$0+1+2+3+\cdots + 18 +19.$$
+38: "$$\n  \\begin{array}{l}\n  \\text{Initialisation : \\ci{somme}$=0$}    \\\\\n\
   \  \\begin{array}{|c|c|}\n  \\hline  \n   \\text{\\ci{i}} &  \\text{\\ci{somme}}\
   \ \\\\\n  \\hline\\hline\n  0 & 0 \\\\  \n  1 & 1 \\\\\n  2 & 3 \\\\\n  3 & 6 \\\
   \\\n  4 & 10\\\\\n  \\hspace*{5ex}\\ldots\\hspace*{5ex} & \\hspace*{5ex}\\ldots\\\
   hspace*{5ex} \\\\\n  18 & 171 \\\\\n  19 & 190 \\\\ \n  \\hline\n  \\end{array}\
   \ \\\\\n  \\text{Affichage : $190$}  \n  \\end{array} \n  $$"
-9: $$13,17,23,27,33,37,43,47,53,57.$$
-10: $$f(x) = x^3-x^2-\frac14x+1$$
-11: $$1^2+2^2+3^2+\cdots+i^2+\cdots +n^2.$$
-12: $$1 \times 3 \times 5 \times \cdots \times 19.$$
-13: $3^2=9$
-14: $10^{-3} = 0.001$
-15: $14$
-16: $4$
-17: $14$
-18: $4$
-19: $14$
-20: $4$
-21: $3.5$
-22: $3,5$
-23: $7$
-24: $6$
-25: $7$
-26: $230$
-27: $107$
-28: $11$
-29: $90$
-30: $13$
-31: $6$
-32: $7$
-33: $3$
-34: $S_0 = 1000$
-35: $100$
-36: $S_1 = S_0 + 100$
-37: $200$
-38: $S_2 = S_1 + 200$
-39: $50$
-40: $S_3 = S_2 - 50$
-41: $100$
-42: $10$
-43: $8$
-44: $3$
-45: $3.14$
-46: $R = 10$
-47: $R$
-48: $x$
-49: $46$
-50: $1000$
-51: $10\%$
-52: $1.10$
-53: $11$
-54: $9$
-55: $x = \sqrt{2}$
-56: $x$
-57: $x^2$
-58: $\pi$
-59: $\pi$
-60: $\sin(\frac\pi2)$
-61: $a = 10\,403$
-62: $b = 10\,506$
-63: $a$
-64: $b$
-65: $x$
-66: $\theta = \frac\pi7$
-67: $4$
-68: $0$
-69: $0^2$
-70: $1$
-71: $1^2$
-72: $2^2$
-73: $3^2$
-74: $9$
-75: $10$
-76: $0$
-77: $0$
-78: $1$
-79: $2$
-80: $0$
-81: $n-1$
-82: $n-1$
-83: $n$
-84: $n$
-85: $0$
-86: $a$
-87: $b-1$
-88: $a$
-89: $a+\text{pas}$
-90: $a + 2\text{pas}$
-91: $x$
-92: $10$
-93: $y$
-94: $3$
-95: $7$
-96: $13$
-97: $17$
-98: $x=20$
-99: $y$
-100: $3$
-101: $7$
-102: $23$
-103: $27$
-104: $0$
-105: $100$
-106: $10$
-107: $20$
-108: $0$
-109: $5$
-110: $10$
-111: $15$
-112: $100$
-113: $2$
-114: $2^1$
-115: $2^{10}$
-116: $[0,1]$
-117: $i$
-118: $0$
-119: $100$
-120: $x=\frac{i}{100}$
-121: $x=0.00$
-122: $x=0.01$
-123: $x=0.02$
-124: $y = x^3-x^2-\frac14x+1$
-125: $x$
-126: $y$
-127: $R$
-128: $100$
-129: $V = \frac43 \pi R^3$
-130: $\pi$
-131: $3.14$
-132: $n$
-133: $n=20$
-134: $1$
-135: $1$
+39: $$13,17,23,27,33,37,43,47,53,57.$$
+40: $$f(x) = x^3-x^2-\frac14x+1$$
+41: $$1^2+2^2+3^2+\cdots+i^2+\cdots +n^2.$$
+42: $$1 \times 3 \times 5 \times \cdots \times 19.$$
+43: $3^2=9$
+44: $10^{-3} = 0.001$
+45: $14$
+46: $4$
+47: $14$
+48: $4$
+49: $14$
+50: $4$
+51: $3.5$
+52: $3,5$
+53: $7$
+54: $6$
+55: $7$
+56: $230$
+57: $107$
+58: $11$
+59: $90$
+60: $13$
+61: $6$
+62: $7$
+63: $3$
+64: $S_0 = 1000$
+65: $100$
+66: $S_1 = S_0 + 100$
+67: $200$
+68: $S_2 = S_1 + 200$
+69: $50$
+70: $S_3 = S_2 - 50$
+71: $100$
+72: $10$
+73: $8$
+74: $3$
+75: $3.14$
+76: $R = 10$
+77: $R$
+78: $x$
+79: $46$
+80: $1000$
+81: $10\%$
+82: $1.10$
+83: $11$
+84: $9$
+85: $x = \sqrt{2}$
+86: $x$
+87: $x^2$
+88: $\pi$
+89: $\pi$
+90: $\sin(\frac\pi2)$
+91: $a = 10\,403$
+92: $b = 10\,506$
+93: $a$
+94: $b$
+95: $x$
+96: $\theta = \frac\pi7$
+97: $4$
+98: $0$
+99: $0^2$
+100: $1$
+101: $1^2$
+102: $2^2$
+103: $3^2$
+104: $9$
+105: $10$
+106: $0$
+107: $0$
+108: $1$
+109: $2$
+110: $0$
+111: $n-1$
+112: $n-1$
+113: $n$
+114: $n$
+115: $0$
+116: $a$
+117: $b-1$
+118: $a$
+119: $a+\text{pas}$
+120: $a + 2\text{pas}$
+121: $x$
+122: $10$
+123: $y$
+124: $3$
+125: $7$
+126: $13$
+127: $17$
+128: $x=20$
+129: $y$
+130: $3$
+131: $7$
+132: $23$
+133: $27$
+134: $0$
+135: $100$
 136: $10$
-137: '\begin{lstlisting}
+137: $20$
+138: $0$
+139: $5$
+140: $10$
+141: $15$
+142: $100$
+143: $2$
+144: $2^1$
+145: $2^{10}$
+146: $[0,1]$
+147: $i$
+148: $0$
+149: $100$
+150: $x=\frac{i}{100}$
+151: $x=0.00$
+152: $x=0.01$
+153: $x=0.02$
+154: $y = x^3-x^2-\frac14x+1$
+155: $x$
+156: $y$
+157: $R$
+158: $100$
+159: $V = \frac43 \pi R^3$
+160: $\pi$
+161: $3.14$
+162: $n$
+163: $n=20$
+164: $1$
+165: $1$
+166: $10$
+167: '\begin{lstlisting}
 
   >>> 2+2
 
   >>> "Bonjour le monde !"
 
   \end{lstlisting}'
-138: '\begin{lstlisting}
+168: '\begin{lstlisting}
 
   print(2+2)
 
   print("Bonjour le monde !")
 
   \end{lstlisting}'
-139: '\begin{lstlisting}
+169: '\begin{lstlisting}
 
   a = 3  # Une variable
 
@@ -172,7 +204,7 @@
   print(c)     # ... qui s''affiche
 
   \end{lstlisting}'
-140: '\begin{lstlisting}
+170: '\begin{lstlisting}
 
   base = 8
 
@@ -185,7 +217,7 @@
   print(Aire)  # !! Erreur !!
 
   \end{lstlisting}'
-141: '\begin{lstlisting}
+171: '\begin{lstlisting}
 
   S = 1000
 
@@ -198,16 +230,16 @@
   print(S)
 
   \end{lstlisting}'
-142: "\\begin{lstlisting}  \n(1)  y = y - 1\n(2)  y = 2*x\n(3)  x = x + 3*y     \n\
+172: "\\begin{lstlisting}  \n(1)  y = y - 1\n(2)  y = 2*x\n(3)  x = x + 3*y     \n\
   (4)  x = 7\n\\end{lstlisting}"
-143: "\\begin{lstlisting}  \na = b\nb = a   \n\\end{lstlisting}"
-144: "\\begin{lstlisting}  \nc = b\na = b\nb = c\n\\end{lstlisting}"
-145: "\\begin{lstlisting}\nc = a\na = b\nb = c \n\\end{lstlisting}"
-146: "\\begin{lstlisting} \nc = a\na = c\nc = b\nb = c\n\\end{lstlisting}"
-147: "\\begin{lstlisting}  \nchaine = \"Bonjour\"\nprint(chaine)\n\\end{lstlisting}"
-148: "\\begin{lstlisting} \nfrom math import *\n\nx = sqrt(2)\nprint(x)\nprint(x**2)\n\
+173: "\\begin{lstlisting}  \na = b\nb = a   \n\\end{lstlisting}"
+174: "\\begin{lstlisting}  \nc = b\na = b\nb = c\n\\end{lstlisting}"
+175: "\\begin{lstlisting}\nc = a\na = b\nb = c \n\\end{lstlisting}"
+176: "\\begin{lstlisting} \nc = a\na = c\nc = b\nb = c\n\\end{lstlisting}"
+177: "\\begin{lstlisting}  \nchaine = \"Bonjour\"\nprint(chaine)\n\\end{lstlisting}"
+178: "\\begin{lstlisting} \nfrom math import *\n\nx = sqrt(2)\nprint(x)\nprint(x**2)\n\
   \\end{lstlisting}"
-149: '\begin{lstlisting}
+179: '\begin{lstlisting}
 
   angle = pi/2
 
@@ -216,448 +248,707 @@
   print(sin(angle))
 
   \end{lstlisting}'
-150: "\\begin{lstlisting}\nfor i in range(10):\n    print(i*i)\n\\end{lstlisting}"
-151: "\\begin{lstlisting}\nfor p in [2,3,5,7,11,13]:\n    print(p**3)\n\\end{lstlisting}"
-152: "\\begin{lstlisting}\nsomme = 0\nfor i in range(20):\n    somme = somme + i\n\
+180: "\\begin{lstlisting}\nfor i in range(10):\n    print(i*i)\n\\end{lstlisting}"
+181: "\\begin{lstlisting}\nfor p in [2,3,5,7,11,13]:\n    print(p**3)\n\\end{lstlisting}"
+182: "\\begin{lstlisting}\nsomme = 0\nfor i in range(20):\n    somme = somme + i\n\
   print(somme)\n\\end{lstlisting}"
-153: "\\begin{lstlisting}\nfor x in [10,20,30,40,50]:\n    for y in [3,7]:\n     \
+183: "\\begin{lstlisting}\nfor x in [10,20,30,40,50]:\n    for y in [3,7]:\n     \
   \   print(x+y)\n\\end{lstlisting}"
-154: \begin{document}
-155: \begin{cours}
-156: \begin{itemize}
-157: \begin{itemize}
-158: \begin{activite}
-159: \begin{enumerate}
-160: \begin{itemize}
-161: \begin{cours}
-162: \begin{cours}
-163: \begin{activite}
-164: \begin{enumerate}
-165: \begin{enumerate}
-166: \begin{center}
-167: \begin{minipage}
-168: \begin{center}
-169: \begin{minipage}
-170: \begin{minipage}
-171: \begin{minipage}
-172: \begin{minipage}
-173: \begin{cours}
-174: \begin{itemize}
-175: \begin{center}
-176: \begin{minipage}
-177: \begin{center}
-178: \begin{minipage}
-179: \begin{center}
-180: \begin{minipage}
-181: \begin{itemize}
-182: \begin{activite}
-183: \begin{enumerate}
-184: \begin{itemize}
+184: \begin{document}
 185: \begin{cours}
 186: \begin{itemize}
-187: \begin{center}
-188: \begin{minipage}
-189: \begin{center}
-190: \begin{minipage}
-191: \begin{center}
-192: \begin{minipage}
-193: \begin{minipage}
-194: \begin{itemize}
-195: \begin{itemize}
-196: \begin{itemize}
-197: \begin{center}
-198: \begin{minipage}
-199: \begin{activite}
-200: \begin{enumerate}
-201: \begin{enumerate}
-202: \begin{itemize}
-203: \begin{itemize}
-204: \begin{activite}
-205: \begin{enumerate}
-206: \end{itemize}
-207: \end{itemize}
-208: \end{cours}
-209: \end{itemize}
-210: \end{enumerate}
-211: \end{activite}
-212: \end{cours}
-213: \end{cours}
-214: \end{enumerate}
-215: \end{minipage}
-216: \end{center}
-217: \end{minipage}
-218: \end{minipage}
-219: \end{minipage}
-220: \end{minipage}
-221: \end{center}
-222: \end{enumerate}
-223: \end{activite}
-224: \end{minipage}
-225: \end{center}
-226: \end{minipage}
-227: \end{center}
-228: \end{minipage}
-229: \end{center}
-230: \end{itemize}
-231: \end{itemize}
-232: \end{cours}
-233: \end{itemize}
-234: \end{enumerate}
-235: \end{activite}
-236: \end{minipage}
-237: \end{center}
-238: \end{minipage}
-239: \end{center}
-240: \end{minipage}
-241: \end{center}
-242: \end{itemize}
-243: \end{itemize}
-244: \end{itemize}
+187: \begin{itemize}
+188: \begin{activite}
+189: \begin{enumerate}
+190: \begin{itemize}
+191: \begin{cours}
+192: \begin{cours}
+193: \begin{activite}
+194: \begin{enumerate}
+195: \begin{enumerate}
+196: \begin{center}
+197: \begin{minipage}
+198: \begin{center}
+199: \begin{minipage}
+200: \begin{minipage}
+201: \begin{minipage}
+202: \begin{minipage}
+203: \begin{cours}
+204: \begin{itemize}
+205: \begin{center}
+206: \begin{minipage}
+207: \begin{center}
+208: \begin{minipage}
+209: \begin{center}
+210: \begin{minipage}
+211: \begin{itemize}
+212: \begin{activite}
+213: \begin{enumerate}
+214: \begin{itemize}
+215: \begin{cours}
+216: \begin{itemize}
+217: \begin{center}
+218: \begin{minipage}
+219: \begin{center}
+220: \begin{minipage}
+221: \begin{center}
+222: \begin{minipage}
+223: \begin{minipage}
+224: \begin{itemize}
+225: \begin{itemize}
+226: \begin{itemize}
+227: \begin{center}
+228: \begin{minipage}
+229: \begin{activite}
+230: \begin{enumerate}
+231: \begin{enumerate}
+232: \begin{itemize}
+233: \begin{itemize}
+234: \begin{activite}
+235: \begin{enumerate}
+236: \end{itemize}
+237: \end{itemize}
+238: \end{cours}
+239: \end{itemize}
+240: \end{enumerate}
+241: \end{activite}
+242: \end{cours}
+243: \end{cours}
+244: \end{enumerate}
 245: \end{minipage}
-246: \end{minipage}
-247: \end{center}
-248: \end{itemize}
-249: \end{cours}
-250: \end{enumerate}
-251: \end{itemize}
-252: \end{itemize}
-253: \end{enumerate}
-254: \end{activite}
-255: \end{enumerate}
-256: \end{activite}
-257: \end{document}
-258: \usepackage[screen]{../python}
-259: \documentclass[11pt,class=report,crop=false]{standalone}
-260: \chapitre
-261: \objectifs
-262: \Python
-263: \insertvideo
-264: \insertvideo
-265: \insertvideo
-266: \insertvideo
-267: \insertvideo
-268: \insertvideo
-269: \Python
-270: \Python
-271: \Python
-272: \item
-273: \textbf
-274: \ci
-275: \item
-276: \textbf
-277: \ci
-278: \ci
-279: \ci
-280: \item
-281: \textbf
-282: \index
-283: \index
-284: \ci
-285: \ci
-286: \ci
-287: \item
-288: \textbf
-289: \ci
-290: \ci
-291: \ci
-292: \ci
-293: \item
-294: \textbf
-295: \index
-296: \index
-297: \index
-298: \item
-299: \ci
-300: \ci
-301: \item
-302: \ci
-303: \ci
-304: \og
-305: \fg
-306: \emph
-307: \og
-308: \fg
-309: \og
-310: \fg
-311: \index
-312: \objectifs
-313: \Python
-314: \item
-315: \item
-316: \item
-317: \item
-318: \emph
-319: \item
-320: \item
-321: \item
-322: \item
-323: \Python
-324: \index
-325: \ci
-326: \ci
-327: \textbf
-328: \defi
-329: \index
-330: \og
-331: \ci
-332: \fg
-333: \index
-334: \ci
-335: \index
-336: \og
-337: \ci
-338: \fg
-339: \medskip
-340: \textbf
-341: \index
-342: \index
-343: \og
-344: \fg
-345: \Python
-346: \medskip
-347: \textbf
-348: \Python
-349: \ci
-350: \ci
-351: \ci
-352: \medskip
-353: \textbf
-354: \index
-355: \Python
-356: \ci
-357: \og
-358: \ci
-359: \fg
-360: \og
-361: \ci
-362: \fg
-363: \objectifs
-364: \item
-365: \item
-366: \ci
-367: \ci
-368: \myfigure
-369: \tikzinput
-370: \item
-371: \item
-372: \ci
-373: \item
-374: \textwidth
-375: \item
-376: \item
-377: \ci
-378: \ci
-379: \ci
-380: \ci
-381: \ci
-382: \ci
-383: \textwidth
-384: \textwidth
-385: \textwidth
-386: \textwidth
-387: \sauteligne
-388: \item
-389: \textbf
-390: \Python
-391: \ci
-392: \ci
-393: \textwidth
-394: \ci
-395: \ci
-396: \ci
-397: \ci
-398: \ci
-399: \ci
-400: \ci
-401: \ci
-402: \item
-403: \textbf
-404: \ci
-405: \defi
-406: \index
-407: \ci
-408: \index
-409: \ci
-410: \index
-411: \ci
-412: \ci
-413: \index
-414: \ci
-415: \index
-416: \emph
-417: \textwidth
-418: \ci
+246: \end{center}
+247: \end{minipage}
+248: \end{minipage}
+249: \end{minipage}
+250: \end{minipage}
+251: \end{center}
+252: \end{enumerate}
+253: \end{activite}
+254: \end{minipage}
+255: \end{center}
+256: \end{minipage}
+257: \end{center}
+258: \end{minipage}
+259: \end{center}
+260: \end{itemize}
+261: \end{itemize}
+262: \end{cours}
+263: \end{itemize}
+264: \end{enumerate}
+265: \end{activite}
+266: \end{minipage}
+267: \end{center}
+268: \end{minipage}
+269: \end{center}
+270: \end{minipage}
+271: \end{center}
+272: \end{itemize}
+273: \end{itemize}
+274: \end{itemize}
+275: \end{minipage}
+276: \end{minipage}
+277: \end{center}
+278: \end{itemize}
+279: \end{cours}
+280: \end{enumerate}
+281: \end{itemize}
+282: \end{itemize}
+283: \end{enumerate}
+284: \end{activite}
+285: \end{enumerate}
+286: \end{activite}
+287: \end{document}
+288: \usepackage[screen]{../python}
+289: \documentclass[11pt,class=report,crop=false]{standalone}
+290: \ci{5+7}
+291: \ci{6*7}
+292: \ci{3*(12+5)}
+293: \ci{3*1.5}
+294: \ci{**}
+295: \ci{3**2}
+296: \ci{10**-3}
+297: \ci{14/4}
+298: \ci{3.5}
+299: \ci{1/3}
+300: \ci{0.3333333333333333}
+301: \ci{14//4}
+302: \ci{3}
+303: \ci{14\%4}
+304: \ci{2}
+305: \ci{print}
+306: \ci{a = 3}
+307: \ci{=}
+308: \ci{a}
+309: \ci{mavariable}
+310: \ci{Mavariable}
+311: \ci{MAVARIABLE}
+312: \ci{S}
+313: \ci{S = S + 100}
+314: \ci{S}
+315: \ci{"L'aire vaut ..."}
+316: \ci{print("L'aire vaut",aire)}
+317: \ci{PI}
+318: \ci{a = 9}
+319: \ci{b = 11}
+320: \ci{a}
+321: \ci{b}
+322: \ci{a}
+323: \ci{b}
+324: \ci{print()}
+325: \ci{print("Coucou")}
+326: \ci{abs()}
+327: \ci{abs(-3)}
+328: \ci{3}
+329: \ci{abs(5)}
+330: \ci{5}
+331: \ci{math}
+332: \ci{math}
+333: \ci{math}
+334: \ci{math}
+335: \ci{sqrt()}
+336: \ci{sqrt}
+337: \ci{math}
+338: \ci{import}
+339: \ci{math}
+340: \ci{sin}
+341: \ci{cos}
+342: \ci{pi}
+343: \ci{pi}
+344: \ci{math}
+345: \ci{round()}
+346: \ci{round}
+347: \ci{round(5.6)}
+348: \ci{6}
+349: \ci{round(1.5)}
+350: \ci{2}
+351: \ci{floor()}
+352: \ci{floor}
+353: \ci{floor(5.6)}
+354: \ci{5}
+355: \ci{ceil()}
+356: \ci{ceil}
+357: \ci{ceil(5.6)}
+358: \ci{6}
+359: \ci{math}
+360: \ci{gcd(a,b)}
+361: \ci{gcd}
+362: \ci{abs(x**2 - 15)}
+363: \ci{0.5}
+364: \ci{round(2*x)}
+365: \ci{8}
+366: \ci{floor(3*x)}
+367: \ci{11}
+368: \ci{ceil(4*x)}
+369: \ci{16}
+370: \ci{abs()}
+371: \ci{abs}
+372: \ci{for}
+373: \ci{in}
+374: \ci{for}
+375: \ci{i}
+376: \ci{i}
+377: \ci{i}
+378: \ci{somme}
+379: \ci{range}
+380: \ci{list}
+381: \ci{range()}
+382: \ci{range(n)}
+383: \ci{range(10)}
+384: \ci{[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]}
+385: \ci{list(range(10))}
+386: \ci{range(a,b)}
+387: \ci{range(10,20)}
+388: \ci{[10, 11, 12, 13, 14, 15, 16, 17, 18, 19]}
+389: \ci{range(a,b,pas)}
+390: \ci{range(10,20,2)}
+391: \ci{[10, 12, 14, 16, 18]}
+392: \ci{print("x =",x,"y =",y)}
+393: \ci{print("R =",R,"V =",V)}
+394: \ci{pi}
+395: \ci{math}
+396: \ci{produit}
+397: \ci{range(a,b,2)}
+398: \ci{7 x 9 = 63}
+399: \ci{print(a,"x",b,"=",a*b)}
+400: '\mybox{
+
+  \myfigure{0.7}'
+401: \chapitre
+402: \objectifs
+403: \Python
+404: \insertvideo
+405: \insertvideo
+406: \insertvideo
+407: \insertvideo
+408: \insertvideo
+409: \insertvideo
+410: \Python
+411: \Python
+412: \Python
+413: \item
+414: \textbf
+415: \item
+416: \textbf
+417: \item
+418: \textbf
 419: \index
-420: \ci
+420: \index
 421: \item
 422: \textbf
-423: \ci
-424: \index
-425: \ci
+423: \item
+424: \textbf
+425: \index
 426: \index
-427: \ci
-428: \ci
-429: \index
-430: \ci
-431: \index
-432: \textwidth
-433: \item
-434: \textbf
-435: \ci
-436: \item
-437: \ci
-438: \index
-439: \ci
-440: \ci
-441: \ci
-442: \ci
-443: \ci
-444: \item
-445: \ci
-446: \index
-447: \ci
-448: \ci
-449: \ci
-450: \item
-451: \ci
-452: \index
-453: \ci
-454: \ci
-455: \ci
-456: \objectifs
-457: \Python
-458: \ci
-459: \item
-460: \Python
-461: \ci
+427: \index
+428: \item
+429: \item
+430: \og
+431: \fg
+432: \emph
+433: \og
+434: \fg
+435: \og
+436: \fg
+437: \index
+438: \objectifs
+439: \Python
+440: \item
+441: \item
+442: \item
+443: \item
+444: \emph
+445: \item
+446: \item
+447: \item
+448: \item
+449: \Python
+450: \index
+451: \textbf
+452: \defi
+453: \index
+454: \og
+455: \fg
+456: \index
+457: \index
+458: \og
+459: \fg
+460: \medskip
+461: \textbf
 462: \index
-463: \ci
-464: \index
-465: \og
-466: \fg
-467: \emph
-468: \index
-469: \item
-470: \item
-471: \ci
-472: \ci
-473: \item
-474: \ci
-475: \ci
-476: \item
-477: \ci
-478: \ci
+463: \index
+464: \og
+465: \fg
+466: \Python
+467: \medskip
+468: \textbf
+469: \Python
+470: \medskip
+471: \textbf
+472: \index
+473: \Python
+474: \og
+475: \fg
+476: \og
+477: \fg
+478: \objectifs
 479: \item
-480: \ci
-481: \ci
-482: \emph
-483: \ci
-484: \index
-485: \ci
-486: \index
+480: \item
+481: \myfigure
+482: \tikzinput
+483: \item
+484: \item
+485: \item
+486: \textwidth
 487: \item
-488: \Python
-489: \og
-490: \fg
-491: \objectifs
-492: \og
-493: \fg
-494: \index
-495: \ci
-496: \index
-497: \ci
-498: \index
-499: \mybox
-500: \myfigure
-501: \tikzinput
-502: \defi
+488: \item
+489: \textwidth
+490: \textwidth
+491: \textwidth
+492: \textwidth
+493: \sauteligne
+494: \item
+495: \textbf
+496: \Python
+497: \textwidth
+498: \item
+499: \textbf
+500: \defi
+501: \index
+502: \index
 503: \index
-504: \ci
-505: \item
-506: \textbf
-507: \og
-508: \fg
-509: \textwidth
-510: \ci
-511: \ci
-512: \ldots
-513: \ci
-514: \item
-515: \textbf
-516: \og
-517: \fg
-518: \textwidth
-519: \item
-520: \textbf
-521: \textwidth
-522: \ci
-523: \ldots
-524: \index
-525: \ci
-526: \index
-527: \ci
-528: \mybox
-529: \textwidth
-530: \item
-531: \textbf
-532: \ci
-533: \item
-534: \ci
-535: \ci
-536: \ci
+504: \index
+505: \index
+506: \emph
+507: \textwidth
+508: \index
+509: \item
+510: \textbf
+511: \index
+512: \index
+513: \index
+514: \index
+515: \textwidth
+516: \item
+517: \textbf
+518: \item
+519: \index
+520: \item
+521: \index
+522: \item
+523: \index
+524: \objectifs
+525: \Python
+526: \item
+527: \Python
+528: \index
+529: \index
+530: \og
+531: \fg
+532: \emph
+533: \index
+534: \item
+535: \item
+536: \item
 537: \item
-538: \mycenterline
-539: \ci
-540: \item
-541: \ci
-542: \ci
-543: \ci
-544: \item
-545: \ci
-546: \ldots
-547: \ci
-548: \ci
-549: \item
-550: \textbf
-551: \textwidth
-552: \og
-553: \fg
-554: \objectifs
+538: \item
+539: \emph
+540: \index
+541: \index
+542: \item
+543: \Python
+544: \og
+545: \fg
+546: \objectifs
+547: \og
+548: \fg
+549: \index
+550: \index
+551: \index
+552: \tikzinput
+553: \defi
+554: \index
 555: \item
-556: \item
-557: \item
-558: \item
-559: \ldots
-560: \item
-561: \oe
-562: \item
-563: \emph
-564: \item
-565: \item
-566: \ldots
-567: \item
-568: \item
-569: \ci
-570: \item
-571: \item
-572: \item
-573: \emph
+556: \textbf
+557: \og
+558: \fg
+559: \textwidth
+560: \ldots
+561: \item
+562: \textbf
+563: \og
+564: \fg
+565: \textwidth
+566: \item
+567: \textbf
+568: \textwidth
+569: \ldots
+570: \index
+571: \index
+572: \mybox
+573: \textwidth
 574: \item
-575: \item
+575: \textbf
 576: \item
-577: \ci
-578: \item
-579: \ci
-580: \ci
-581: \og
-582: \fg
-583: \objectifs
-584: \item
-585: \item
-586: \emph
-587: \ci
-588: \ci
+577: \item
+578: \mycenterline
+579: \item
+580: \item
+581: \ldots
+582: \item
+583: \textbf
+584: \textwidth
+585: \og
+586: \fg
+587: \objectifs
+588: \item
 589: \item
-590: \mycenterline
-591: \ci
-592: \ci
+590: \item
+591: \item
+592: \ldots
+593: \item
+594: \oe
+595: \item
+596: \emph
+597: \item
+598: \item
+599: \ldots
+600: \item
+601: \item
+602: \item
+603: \item
+604: \item
+605: \emph
+606: \item
+607: \item
+608: \item
+609: \item
+610: \og
+611: \fg
+612: \objectifs
+613: \item
+614: \item
+615: \emph
+616: \item
+617: \mycenterline
+618: "  \n\n    \n   "
+619: "\n    \n   "
+620: "    \n\n  \n "
+621: "  \n  \n "
+622: " \t \n\n "
+623: " \n  \n "
+624: "       \n    "
+625: " \n\t  \n\t "
+626: "\n\t  \n\t"
+627: "\n  \n  \n "
+628: "\n    \n "
+629: "    \n   "
+630: '€289€
+
+  €288€
+
+  €184€
+
+
+
+  €0€
+
+  €401€'
+631: '€1€
+
+
+
+  €402€'
+632: '€2€
+
+  €3€
+
+
+  €185€'
+633: "€186€\n  €413€ €414€"
+634: €415€ €416€
+635: €417€ €418€
+636: €421€ €422€
+637: €423€ €424€
+638: "€187€\n    €428€ €301€"
+639: €429€ €303€
+640: €50€€431€
+641: '€236€
+
+  €237€
+
+
+  €432€'
+642: '€238€
+
+
+
+  €4€
+
+  €5€
+
+  €6€
+
+
+  €188€'
+643: "€189€\n  €440€"
+644: "€30€\n  \n  €442€"
+645: "€31€\n  \n  €443€ €53€"
+646: "€33€\n  \n  €444€"
+647: "€190€\n    €446€"
+648: "€239€\n    \n€240€\n\n€241€\n\n€7€\n€8€\n\n€191€"
+649: '€168€
+
+
+  €9€
+
+  €242€
+
+
+
+
+  €10€
+
+  €11€
+
+
+  €192€'
+650: €306€€455€
+651: €308€€459€
+652: '€169€
+
+
+
+  €460€
+
+
+  €461€'
+653: '€467€
+
+
+  €468€'
+654: '€470€
+
+
+  €471€'
+655: €313€€475€
+656: '€243€
+
+
+
+
+  €12€
+
+  €13€
+
+  €14€
+
+
+  €193€'
+657: "€194€\n  €479€ \n  €195€\n    €480€"
+658: €618€ €483€
+659: €619€ €484€
+660: €244€€620€ €485€
+661: '€196€
+
+  €197€'
+662: '€172€
+
+  €245€
+
+  €246€€621€ €487€'
+663: '€198€
+
+  €199€'
+664: '€173€
+
+  €247€
+
+  €200€'
+665: '€174€
+
+  €248€
+
+  €201€'
+666: '€175€
+
+  €249€
+
+  €202€'
+667: "€176€\n€250€\n\n€251€ \n \n€252€  \n€253€\n\n\n€15€\n€16€\n\n€203€"
+668: "€493€\n€204€\n  €494€ €495€"
+669: '€205€
+
+  €206€'
+670: '€177€
+
+  €254€
+
+  €255€€622€'
+671: "€17€\n\n  €498€ €499€"
+672: €332€€502€
+673: €335€€504€
+674: '€207€
+
+  €208€'
+675: '€178€
+
+  €256€
+
+
+  €257€'
+676: €337€€508€
+677: €509€ €510€
+678: €342€€513€
+679: '€209€
+
+  €210€'
+680: "€179€\n€258€\n€259€\n\n  €516€ €517€"
+681: "€211€\n    €518€ €345€€519€"
+682: €520€ €351€€521€
+683: €522€ €355€€523€
+684: '€260€€624€
+
+  €261€
+
+
+  €262€
+
+
+  €18€
+
+  €19€
+
+  €20€
+
+
+  €212€'
+685: "€213€\n  €526€"
+686: €360€€528€
+687: "€34€\n  \n  €534€"
+688: "€214€\n    €535€ €362€"
+689: "€363€\n    €536€ €364€"
+690: "€365€\n    €537€ €366€"
+691: "€367€\n    €538€ €368€"
+692: "€369€ \n  €263€\n \n  €539€"
+693: €370€€540€
+694: "€264€  \n€265€\n\n€21€\n€22€\n\n€215€"
+695: "€216€\n  €555€ €556€"
+696: '€217€
+
+  €218€'
+697: '€180€
+
+  €266€
+
+  €267€'
+698: €103€€560€
+699: €561€ €562€
+700: '€219€
+
+  €220€'
+701: "€181€\n€268€\n€269€ \n\n  €566€ €567€"
+702: '€37€
+
+
+  €221€
+
+  €222€'
+703: '€182€
+
+  €270€
+
+  €271€'
+704: €109€€569€
+705: "€38€ \n€272€ \n\n€23€\n€570€"
+706: "€224€\n €574€ €575€"
+707: "€225€\n\t  €576€"
+708: €626€ €577€
+709: €120€€581€
+710: '€273€
+
+  €274€
+
+  €275€'
+711: "€226€\n  €582€ €583€"
+712: '€227€
+
+  €228€'
+713: '€183€
+
+  €276€
+
+  €277€'
+714: "€39€\n    \n€278€ \n€279€\n\n\n€24€\n€25€\n€26€\n\n€229€"
+715: "€230€\n  €588€ \n  €231€\n    €589€"
+716: "€280€\n\n  €593€"
+717: €627€ €595€
+718: "€232€\n    €597€"
+719: "€153€€599€\n    €600€"
+720: €281€€628€ €604€
+721: "€233€\n    €606€"
+722: €629€ €609€
+723: "€282€\n  \n€283€  \n€284€\n\n\n€27€\n€28€\n€29€\n\n€234€"
+724: "€235€\n  €613€"
+725: "€41€\n  \n  €614€"
+726: "€42€\n  \n  €615€"
+727: "€285€  \n€286€\n\n€287€"

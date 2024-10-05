@@ -1,18 +1,93 @@
-0: $$4+5$$
-1: $$\text{ppcm}(a,b) = \frac{a \times b}{\text{pgcd}(a,b)}.$$
-2: $$\cos^2 \theta + \sin^2 \theta = 1.$$
-3: $2+3$
-4: $0+1$
-5: $a = 10\,403$
-6: $b = 10\,506$
-7: $a$
-8: $b$
-9: $x$
-10: $\theta = \frac\pi7$
-11: \(6+7\)
-12: \[8+9\]
-13: '\begin{equation}
+0: '% Original (français)'
+1: $$4+5$$
+2: $$\text{ppcm}(a,b) = \frac{a \times b}{\text{pgcd}(a,b)}.$$
+3: $$\cos^2 \theta + \sin^2 \theta = 1.$$
+4: $2+3$
+5: $0+1$
+6: $a = 10\,403$
+7: $b = 10\,506$
+8: $a$
+9: $b$
+10: $x$
+11: $\theta = \frac\pi7$
+12: \(6+7\)
+13: \[8+9\]
+14: '\begin{equation}
 
   2+2 = 2 \times 2
 
   \end{equation}'
+15: \begin{activite}
+16: \begin{enumerate}
+17: \begin{itemize}
+18: \end{itemize}
+19: \end{enumerate}
+20: \end{activite}
+21: \ci{math}
+22: \ci{gcd(a,b)}
+23: \ci{gcd}
+24: \ci{abs(x**2 - 15)}
+25: \ci{0.5}
+26: \ci{round(2*x)}
+27: \ci{8}
+28: \ci{floor(3*x)}
+29: \ci{11}
+30: \ci{ceil(4*x)}
+31: \ci{16}
+32: \ci{abs()}
+33: \ci{abs}
+34: \objectifs
+35: \Python
+36: \item
+37: \Python
+38: \index
+39: \index
+40: \og
+41: \fg
+42: \emph
+43: \index
+44: \item
+45: \item
+46: \item
+47: \item
+48: \item
+49: \emph
+50: \index
+51: \index
+52: \item
+53: \Python
+54: "\n  \n "
+55: "\n  \n "
+56: '€0€
+
+
+  €4€
+
+
+  €5€
+
+
+  €1€
+
+
+  €12€
+
+
+  €13€
+
+
+  €14€
+
+
+  €15€'
+57: "€16€\n  €36€"
+58: €22€€38€
+59: €2€€54€ €44€
+60: "€17€\n    €45€ €24€"
+61: "€25€\n    €46€ €26€"
+62: "€27€\n    €47€ €28€"
+63: "€29€\n    €48€ €30€"
+64: "€31€ \n  €18€\n \n  €49€"
+65: €32€€50€
+66: €55€ €52€
+67: "€19€  \n€20€"

@@ -21,4 +21,25 @@ list_env_discard_perso = []    # like ['equation','align*']
 # Ex. \usepackage[option]{class} will be replaced by a tag
 # Ex. \emph{my text} is not there and the content will be kept
 
-list_cmd_arg_discard_perso = ['ci','mybox']
+list_cmd_arg_discard_perso = [
+    'ci',
+    'mybox',
+    'include',
+    'input',
+    'pagestyle',
+    'pagenumbering',
+    'setcounter',
+    'RequirePackage',
+    'bookfile',
+    'color',
+    'definecolor',
+    'vskip',
+    'label',
+    'thispagestyle',
+    'fontspec',
+    'setmainfont',
+    'hpfont',
+    'ptsansi',
+    'newpagecolor',
+    'settocdepth',
+    ]
